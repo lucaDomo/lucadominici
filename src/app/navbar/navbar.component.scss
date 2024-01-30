@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10%;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.content{
+    margin: 20px 100px 0px 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        margin: 20px;
+    }
+}
