@@ -16,13 +16,77 @@
     color: aliceblue;
 }
 
+.menu a:hover{
+    color: #762dff;
+}
+
 .content{
     margin: 20px 100px 0px 100px;
-    text-align: center;
+    /*text-align: center;*/
+}
+
+.x_btn{
+    display: none;
 }
 
 @media screen and (max-width: 768px){
     .content{
         margin: 20px;
     }
+
+    .menu li{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .menu{
+        text-align: center;
+    }
+
+    .navbar{
+        display:none;
+        width: 100%;
+        padding: 30px 0 0px 0;
+    }
+
+    .menu ul{
+        padding: 0 0;
+    }
+
+    .menu a:hover{
+        color: white;
+    }
+
+    .x_btn{
+        display: none;
+    }
+
+    .x_btn:after{
+        display: inline-block;
+        content: "\00d7";
+        font-size: 50px;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 15px;
+    }
+
+    .line{
+        border: 1.5px solid white;
+        width: 30px;
+        margin-top: 5px;
+    }
+
+
+}
+
+.blocco{
+    margin: 60px 0 0 0;
 }

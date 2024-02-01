@@ -5,13 +5,13 @@
 
 h2{
     font-size: 33px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 
 .formazione_container_content_title span{
 
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
 
 }
@@ -22,13 +22,13 @@ h2{
 
 .span_subtitle{
 
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 400;
 
 }
 
 .span_period{
-    color: #762dff;
+    color: #762efd; /*#6919ff #762dff;*/
     opacity: .8;
     font-size: 16px;
 }
@@ -46,16 +46,14 @@ span, h2{
 }
 
 /*  ANIMATION  */
+/*
 .wrapper {
     position: absolute;
     margin-top: 50px;
     width: 90%;
     height: 400px;
     background: transparent;
-    /*background: -webkit-linear-gradient(to bottom, #514A9D, #24C6DC);  
-    background: linear-gradient(to bottom, #514A9D, #24C6DC);*/
     z-index: -100;
-    /*border: 1px solid red;*/
   }
   
   .box div {
@@ -95,3 +93,4 @@ span, h2{
       opacity: .3;
     }
   }
+*/
