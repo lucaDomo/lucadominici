@@ -3,9 +3,16 @@
     text-align: left;
 }
 
-h2{
+/*h2{
     font-size: 33px;
     font-weight: bold;
+}*/
+h2{
+  font-size: 40px;
+  font-weight: 800;
+  color: #fffef9;
+  letter-spacing: 1.5px;
+  color: #ff7a5f;
 }
 
 
@@ -28,7 +35,7 @@ h2{
 }
 
 .span_period{
-    color: #762efd; /*#6919ff #762dff;*/
+    color: #e06f58; /* #762efd; /*#6919ff #762dff;*/
     opacity: .8;
     font-size: 16px;
 }
@@ -41,7 +48,7 @@ span, h2{
 .separator{
     margin: 25px 0;
     width: 100%;
-    border: #762dff 1px solid;
+    border:  1px solid #e06f58; /*#762dff;*/
     opacity: .3;
 }
 

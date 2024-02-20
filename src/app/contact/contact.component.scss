@@ -1,11 +1,21 @@
 .icon{
-    font-size: 60px;
+    font-size: 40px;
+}
+
+.contatti_container{
+    width: 100%;
+    text-align: center;
+}
+
+.contatti_container_content{
+    display: inline-block;
 }
 
 a{
     text-decoration: none;
     color: white;
 }
+
 
 .contatti_content_icons{
     display: flex;
@@ -17,4 +27,10 @@ h2{
     font-weight: 800;
     color: #fffef9;
     letter-spacing: 1.5px;
+    color: #ff7a5f;
+}
+
+svg:hover{
+    transform: scale(1.5);
+    transition-duration: 500ms;
 }

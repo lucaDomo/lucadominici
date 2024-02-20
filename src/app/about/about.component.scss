@@ -2,8 +2,9 @@
     display: flex;
     color: white;
     justify-content: space-between;
-    letter-spacing: 1.5px;
     z-index: 100;
+    align-items: center;
+    margin-top: -150px;
 }
 
 .about_container_text{
@@ -12,16 +13,16 @@
 }
 
 .about_container_text_info{
-    width: 70%;
+    width: 65%;
 }
 
 .about_container_img{
     margin-top: 30px;
-    width: 30%;
+    width: 35%;
 }
 
 .img{
-    height: 450px;
+    height: 500px;
     width: auto;
 }
 
@@ -33,20 +34,20 @@ h2{
 }
 
 h6{
-    font-size: 16px;
+    font-size: 20px;
     margin: -15px 0 50px 0;
-    opacity: .8;
+    opacity: .9;
     /*color: #96a1c0;*/
-    color: #762efd; /*#6919ff*/
+    color: #e06f58; /*#762efd; /*#6919ff*/
     letter-spacing: 1.5px;
 }
 
 p{
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     color: white;
-    font-size: 17px;
-    padding: 1.5px 0;
+    font-size: 20px;
+    padding: 3px 0;
 }
 
 @media screen and (max-width: 800px){

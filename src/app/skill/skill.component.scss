@@ -19,6 +19,7 @@ h2{
     font-weight: 800;
     color: #fffef9;
     letter-spacing: 1.5px;
+    color: #ff7a5f;
 }
 
 span{
@@ -39,7 +40,7 @@ span{
     }
 
     .skill_container_content{
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
 
@@ -53,9 +54,9 @@ span{
 .skill_container_icons{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     text-align: center;
-    margin: 30px 50px 10px 50px;
+    margin: 30px 50px 10px 20px;
     width: 40%;
 }
 

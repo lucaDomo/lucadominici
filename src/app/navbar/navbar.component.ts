@@ -4,11 +4,12 @@ import { ContactComponent } from '../contact/contact.component';
 import { FormazioneComponent } from '../formazione/formazione.component';
 import { SkillComponent } from '../skill/skill.component';
 import { WorkExperienceComponent } from '../work-experience/work-experience.component';
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [AboutComponent, FormazioneComponent, SkillComponent, WorkExperienceComponent, ContactComponent],
+  imports: [AboutComponent, FormazioneComponent, SkillComponent, WorkExperienceComponent, ContactComponent, ProjectComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })

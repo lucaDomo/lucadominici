@@ -2,10 +2,11 @@
     <nav class="menu">
         <ul>
             <li><a href="">About</a></li>
-            <li><a href="">Formazione</a></li>
-            <li><a href="">Skill</a></li>
-            <li><a href="">Esperienze</a></li>
-            <li><a href="">Contatti</a></li>
+            <li><a href="#istruzione">Istruzione</a></li>
+            <li><a href="#conoscenze">Conoscenze</a></li>
+            <li><a href="#esperienze">Esperienze</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#contatti">Contatti</a></li>
         </ul>
     </nav>
 </div>
@@ -18,19 +19,22 @@
 </div>
 
 <div class="content">
-    <div class="blocco">
+    <div class="blocco" id="about">
         <app-about></app-about>
     </div>
-    <div class="blocco">
+    <div class="blocco" id="istruzione">
         <app-formazione></app-formazione>
     </div>
-    <div class="blocco">
+    <div class="blocco" id="conoscenze">
         <app-skill></app-skill>
     </div>
-    <div class="blocco">
+    <div class="blocco" id="esperienze">
         <app-work-experience></app-work-experience>
     </div>
-    <div class="blocco">
+    <div class="blocco" id="progetti">
+        <app-project></app-project>
+    </div>
+    <div class="blocco" id="contatti">
         <app-contact></app-contact>
     </div>
 </div>
