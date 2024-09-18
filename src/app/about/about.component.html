@@ -1,4 +1,18 @@
 <div class="about_container">
+
+    <div class="about_container_text">
+        <div class="about_container_text_title">
+            <h2>{{about?.title}}</h2>
+            <h6>{{about?.subtitle}}</h6>
+        </div>
+        <div class="about_container_text_info">
+            <p *ngFor="let content of about?.content" style="padding: 5px;">
+                <!-- "Attualmente sto lavorando ad un progetto di tesi di ricerca nell'ambito del machine learning.", -->
+                {{content}}
+            </p>
+        </div>
+    </div>
+    <!--
     <div class="about_container_text">
         <div class="about_container_text_title">
             <h2>Ciao, sono Luca</h2>
@@ -11,6 +25,7 @@
             
         </div>
     </div>
+    -->
     <div class="about_container_img">
         <img class="img" src="../../assets/image/img.jpeg" alt="About image">
     </div>

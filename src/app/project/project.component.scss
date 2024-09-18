@@ -1,10 +1,9 @@
-.project_container{
-}
-
 h2{
-    font-size: 33px;
-    font-weight: bold;
-    color: #ff7a5f;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff; 
+    letter-spacing: 1.5px;
+    /*color: #ff7a5f;*/
 }
 
 .project_container_content{
@@ -16,24 +15,46 @@ h2{
 
 .grid{
     width: 100%;
-    text-align: left;
+    /*text-align: center;*/
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
-    justify-content: space-between;
     gap: 20px;
+    
 }
 
 .card{
-    width: 550px;
+    
+    width: 480px; 
     height: 650px;
     border-radius: 15px;
     text-align: center;
-    margin: 0 auto;
+    /*margin: 0 auto; /* Con questo, se in una riga compare un solo elemento viene messo al centro */
     position: relative;
     z-index: 1;
     background-color: #2d2e3b;
+    margin: auto;
     
+}
+
+.card-animation{
+    transition: transform .4s ease 0s !important;
+}
+
+.card-animation:hover{
+    transform: scale(1.05) !important;
+}
+
+
+.card-model{
+    width: 100% !important;
+    height: max-content !important;
+}
+
+.card_test {
+    flex-basis: calc(50% - 15px);
+    margin-top: 15px;
 }
 
 .card-bg{
@@ -52,12 +73,17 @@ h2{
     border-radius: 15px 15px 0 0;
 }
 
+
+.card-bg-model{
+    height: 350px;
+}
+
 .coldstorage{
     background-image: url("../../assets/image/ColdStorageImg.png");
 }
 
 .fake-api{
-    background-image: url("../../assets/image/FakeServerImg.png");
+    background-image: url("../../assets/image/moneyTracker.png");
 }
 
 .none{
@@ -72,14 +98,14 @@ h2{
 
 .tag{
     position: relative;
-    background-color: green;
-    width: 60px;
-    height: 45px;
+    background-color: rgba(224, 111, 88, .7) !important; /* #1d1e26 */
+    width: 70px;
+    
     border-radius: 15px;
+    text-align: center;
 }
 
 .tag p{
-    text-align: center;
     font-size: 15px;
     color: white;
 }
@@ -91,19 +117,25 @@ h2{
 
 .card_description{
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 22px;
+    font-weight: 400;
     text-align: justify;
     margin: 30px 30px;
     color:aliceblue;
+    min-height: 200px;
+    
 }
 
 .card_button{
     width: 100%;
-    text-align: center;
-    margin-bottom: 0px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
     
+    
+}
+
+.card_button_modal{
+    padding-bottom: 20px;
 }
 
 .btn{
@@ -116,21 +148,116 @@ h2{
     cursor: pointer;
 }
 
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px){
 
-.bg-orange{
-    background-color: rgb(216, 140, 0);
-}
-
-.bg-blue{
-    background-color: rgb(0, 205, 205);
-}
-
-.bg-yellow{
-    background-color: rgb(191, 191, 2);
-}
-
-@media screen and (max-width: 768px){
     .grid{
         gap: 50px;
     }
+
+    .card_description{
+        text-align:unset;
+        height: 250px;
+        
+    }
+
+    .card_description_modal{
+        height: 100%;
+    }
+
+    .card{
+        height: 750px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .card h3{
+        padding: 20px;
+    }
+
+    .card_test {
+        border: 1px solid transparent;
+        flex-basis: 100vw !important;
+        margin: auto;
+    }
+
+    .card-model{
+        width: 100% !important;
+        
+    }
+
+    .card-bg-model{
+        
+        height: 200px;
+    }
+
+    .modal{
+        width: 100%;
+        
+        height: fit-content;
+        padding-bottom: 25px;
+    }
+
+    .modal-content{
+        width: 90% !important;
+        
+        margin-top: 10px!important;
+        padding: 0px !important;
+    }
+
 }
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1020px){
+
+}
+
+@media screen and (max-width: 768px){
+    
+    
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    
+    /* background-color: #fefefe;*/
+    margin: auto; /* 15% from the top and centered */
+    padding: 60px;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+
+  .close_div{
+    margin-bottom: -45px;
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 10;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }

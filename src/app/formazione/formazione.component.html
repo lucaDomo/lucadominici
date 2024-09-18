@@ -8,13 +8,29 @@
 </div>
 -->
 <div class="formazione_container">
-    <h2>Istruzione</h2>
+    <div class="title_section_div"> <!-- align-items: flex-end;-->
+        <div class="block"></div>
+        <h2>Istruzione</h2>
+    </div>
+
+    <div *ngFor="let istr of istruzione; index as i;">
+        <div class="formazione_container_content">
+            <div class="formazione_container_content_title">
+                <span>{{istr.title}}</span>
+            </div>
+            <div class="formazione_container_content_subtitle">
+                <span class="span_subtitle">{{istr.description}}</span> <span class="span_period vertical-separator"> | </span> <span class="span_period"> {{istr.period}}</span>
+            </div>
+        </div>
+        <div *ngIf="i<length" class="separator"></div>
+    </div>
+    <!--
     <div class="formazione_container_content">
         <div class="formazione_container_content_title">
             <span>Laurea Magistrale in Ingegneria Informatica</span>
         </div>
         <div class="formazione_container_content_subtitle">
-            <span class="span_subtitle">Alma Mater Studiorum University, Bologna (BO)</span> <span class="span_period"> | Ottobre 2022 – In corso</span>
+            <span class="span_subtitle">Alma Mater Studiorum University, Bologna (BO)</span> <span class="span_period vertical-separator"> | </span> <span class="span_period"> Ottobre 2022 – In corso</span>
         </div>
     </div>
     <div class="separator"></div>
@@ -23,7 +39,8 @@
             <span>Laurea Triennale in Ingegneria Informatica</span>
         </div>
         <div class="formazione_container_content_subtitle">
-            <span class="span_subtitle">Alma Mater Studiorum University, Bologna (BO)</span> <span class="span_period"> | Settembre 2019 – Ottobre 2022</span>
+            <span class="span_subtitle">Alma Mater Studiorum University, Bologna (BO)</span> <span class="span_period vertical-separator"> | </span> <span class="span_period"> Settembre 2019 – Ottobre 2022</span>
         </div>
     </div>
+    -->
 </div>

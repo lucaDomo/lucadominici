@@ -1,5 +1,20 @@
 <div class="work_container">
-    <h2>Esperienze lavorative</h2>
+    <div class="title_section_div"> <!-- align-items: flex-end;-->
+        <div class="block"></div>
+        <h2>Esperienze lavorative</h2>
+    </div>
+    <div *ngFor="let work of works; index as i;">
+        <div class="work_container_content">
+            <div class="work_container_content_title">
+                <span class="span_title">{{work.title}}</span> <span class="span_period"> | {{work.period}}</span>
+            </div>
+            <div class="work_container_content_subtitle">
+                <span class="span_subtitle">{{work.description}}</span>
+            </div>
+        </div>
+        <div *ngIf="i<length" class="separator"></div>
+    </div>
+    <!--
     <div class="work_container_content">
         <div class="work_container_content_title">
             <span class="span_title">Web Developer presso Ciollo Service s.r.l</span> <span class="span_period"> | Bologna (BO), Settembre 2022 - Marzo 2023</span>
@@ -9,7 +24,7 @@
         </div>
     </div>
     <div class="separator"></div>
-    <div class="work_container_content second">
+    <div class="work_container_content">
         <div class="work_container_content_title">
             <span class="span_title">Tirocinio curricolare presso Ciollo Service s.r.l</span> <span class="span_period"> | Bologna (BO), Giugno 2022 - Luglio 2022</span>
         </div>
@@ -17,4 +32,5 @@
             <span class="span_subtitle">Programmazione Web con PHP</span>
         </div>
     </div>
+    -->
 </div>

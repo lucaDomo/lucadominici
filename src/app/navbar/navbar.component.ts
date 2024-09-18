@@ -15,6 +15,7 @@ import { ProjectComponent } from '../project/project.component';
 })
 export class NavbarComponent {
 
+
   close(){
     var el = document.getElementById("navbar")
     if(el!=null){

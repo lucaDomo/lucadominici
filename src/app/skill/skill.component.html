@@ -1,63 +1,90 @@
 <div class="skill_container">
-    <h2>Conoscenze</h2>
+    <div class="title_section_div"> <!-- align-items: flex-end;-->
+        <div class="block"></div>
+        <h2>Skills</h2>
+    </div>
+
+    <!--
+    
     <div class="skill_container_content">
         <div class="skill_container_icons">
-            <div class="skill_container_icon">
-                <i class="devicon-java-plain icon"></i>
-                <p>Java</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon" style="vertical-align: middle;">
+                    <i class="devicon-java-plain icon"></i>
+                    <h5>Java</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-c-plain icon"></i>
-                <p>C</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-c-plain icon"></i>
+                    <h5>C</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-gradle-plain icon"></i>
-                <p>Gradle</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-gradle-plain icon"></i>
+                    <h5>Gradle</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-html5-plain icon"></i>
-                <p>Html</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-html5-plain icon"></i>
+                    <h5>Html</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-css3-plain icon"></i>
-                <p>Css</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-css3-plain icon"></i>
+                    <h5>Css</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-javascript-plain icon"></i>
-                <p>JavaScript</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-javascript-plain icon"></i>
+                    <h5>JavaScript</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-angularjs-plain icon"></i>
-                <p>Angular</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-angularjs-plain icon"></i>
+                    <h5>Angular</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-php-plain icon"></i>
-                <p>PHP</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-php-plain icon"></i>
+                    <h5>PHP</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-laravel-plain icon"></i>
-                <p>Laravel</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-laravel-plain icon"></i>
+                    <h5>Laravel</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-spring-original icon"></i>
-                <p>Spring</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-spring-original icon"></i>
+                    <h5>Spring</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-mysql-plain icon"></i>
-                <p>Mysql</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-mysql-plain icon"></i>
+                    <h5>Mysql</h5>
+                </div>
             </div>
-            <div class="skill_container_icon">
-                <i class="devicon-python-plain icon"></i>
-                <p>Python</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-python-plain icon"></i>
+                    <h5>Python</h5>
+                </div>
             </div>
-            <!--
-            <div class="skill_container_icon">
-                <i class="devicon-go-original-wordmark icon"></i>
-                <p>Go</p>
-            </div>-->
-            <div class="skill_container_icon">
-                <i class="devicon-docker-plain icon"></i>
-                <p>Docker</p>
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="devicon-docker-plain icon"></i>
+                    <h5>Docker</h5>
+                </div>
             </div>
         </div>
         <div class="skill_container_text">
@@ -69,4 +96,108 @@
         </div>
         
     </div>
+
+    <br>
+    OPPURE NO TESTO
+    <br>
+    -->
+
+    <div class="skill_container_icons_2">
+
+        <div *ngFor="let skill of skills" class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="{{skill?.iconClass}} icon"></i>
+                <h5>{{skill?.name}}</h5>
+            </div>
+        </div>
+
+        <!--
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-html5-plain icon"></i>
+                <h5>Html</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-css3-plain icon"></i>
+                <h5>Css</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-javascript-plain icon"></i>
+                <h5>JavaScript</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-angularjs-plain icon"></i>
+                <h5>Angular</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon" style="vertical-align: middle;">
+                <i class="devicon-java-plain icon"></i>
+                <h5>Java</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-spring-original icon"></i>
+                <h5>Spring</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-gradle-plain icon"></i>
+                <h5>Gradle</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-php-plain icon"></i>
+                <h5>PHP</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-laravel-plain icon"></i>
+                <h5>Laravel</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-python-plain icon"></i>
+                <h5>Python</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-tensorflow-original icon"></i>
+                <h5>Tensorflow</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-c-plain icon"></i>
+                <h5>C</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-mysql-plain icon"></i>
+                <h5>Mysql</h5>
+            </div>
+        </div>
+        <div class="skill_container_box">
+            <div class="skill_container_icon">
+                <i class="devicon-docker-plain icon"></i>
+                <h5>Docker</h5>
+            </div>
+        </div>
+        -->
+        
+    </div>
+
 </div>

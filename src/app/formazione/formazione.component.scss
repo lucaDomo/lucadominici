@@ -10,11 +10,10 @@
 h2{
   font-size: 40px;
   font-weight: 800;
-  color: #fffef9;
+  color: #e5e4de; 
   letter-spacing: 1.5px;
-  color: #ff7a5f;
+  /*color: #ff7a5f;*/
 }
-
 
 .formazione_container_content_title span{
 
@@ -51,6 +50,15 @@ span, h2{
     border:  1px solid #e06f58; /*#762dff;*/
     opacity: .3;
 }
+
+@media screen and (max-width: 768px){
+  /*
+  .vertical-separator{
+    display: none;
+  }
+  */
+}
+
 
 /*  ANIMATION  */
 /*

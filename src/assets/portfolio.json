@@ -1,0 +1,157 @@
+{
+    "skills":[
+        {
+            "iconClass": "devicon-html5-plain",
+            "name": "Html"
+        },
+        {
+            "iconClass": "devicon-css3-plain",
+            "name": "Css"
+        },
+        {
+            "iconClass": "devicon-javascript-plain",
+            "name": "Javascript"
+        },
+        {
+            "iconClass": "devicon-angularjs-plain",
+            "name": "Angular"
+        },
+        {
+            "iconClass": "devicon-java-plain",
+            "name": "Java"
+        },
+        {
+            "iconClass": "devicon-spring-original",
+            "name": "Spring"
+        },
+        {
+            "iconClass": "devicon-gradle-plain",
+            "name": "Gradle"
+        },
+        {
+            "iconClass": "devicon-php-plain",
+            "name": "PHP"
+        },
+        {
+            "iconClass": "devicon-laravel-plain",
+            "name": "Laravel"
+        },
+        {
+            "iconClass": "devicon-python-plain",
+            "name": "Python"
+        },
+        {
+            "iconClass": "devicon-tensorflow-original",
+            "name": "Tensorflow"
+        },
+        {
+            "iconClass": "devicon-c-plain",
+            "name": "C"
+        },
+        {
+            "iconClass": "devicon-mysql-plain",
+            "name": "MySql"
+        },
+        {
+            "iconClass": "devicon-docker-plain",
+            "name": "Docker"
+        }
+
+    ],
+    "works":[
+        {
+            "title": "Web Developer presso Ciollo Service s.r.l",
+            "period": "Bologna (BO), Settembre 2022 - Marzo 2023",
+            "description": "Programmazione Web con PHP, utilizzo del framework Angular e Laravel"
+        },
+        {
+            "title": "Tirocinio curricolare presso Ciollo Service s.r.l",
+            "period": "Bologna (BO), Giugno 2022 - Luglio 2022",
+            "description": "Programmazione Web con PHP"
+        }
+    ],
+    "istruzione":[
+        {
+            "title": "Laurea Magistrale in Ingegneria Informatica",
+            "period": "Ottobre 2022 - In corso",
+            "description": "Alma Mater Studiorum University, Bologna (BO)"
+        },
+        {
+            "title": "Laurea Triennale in Ingegneria Informatica",
+            "period": "Settembre 2019 - Ottobre 2022",
+            "description": "Alma Mater Studiorum University, Bologna (BO)"
+        }
+    ],
+    "about":{
+        "title": "Ciao, sono Luca",
+        "subtitle": "Software Developer, Full Stack Developer",
+        "content":[
+            "Laureato alla triennale di Ingegneria informatica all'università di Bologna. Sto frequententando al momento l'ultimo anno della magistrale di Ingegneria informatica sempre all'università di Bologna.",
+            
+            "Ho svolto un periodo di attività lavorativa post tirocinio triennale come Full Stack Developer lavorando principalmente con PHP e il framework Angular."
+        ]
+    },
+    "projects":[
+        {
+            "name": "MoneyTracker",
+            "tag": [
+                "PHP",
+                "Laravel"
+            ],
+            "cardDescription": [
+                "Applicazione web per monitorare le proprie spese ed i propri guadagni. Si ha la possibilità di filtrare le transazioni per periodo (settimana, mese, anno), di suddividere le transazioni per categorie e avere un resoconto generale tramite dei grafici.",
+                "È in sviluppo la possibilità di esportare tutte le informazioni in un file csv."
+            ],
+            "modelDescription": [
+                "Applicazione web per monitorare le proprie spese ed i propri guadagni. Si ha la possibilità di filtrare le transazioni per periodo (settimana, mese, anno), di suddividere le transazioni per categorie e avere un resoconto generale tramite dei grafici.",
+                "È in sviluppo la possibilità di esportare tutte le informazioni in un file csv."
+            ],
+            "githubLink": "https://github.com/lucaDomo/moneyTracker",
+            "img": "assets/image/moneyTracker.png" 
+        },
+        {
+            "name": "ColdStorageService",
+            "tag": [
+                "Kotlin",
+                "Spring",
+                "Python",
+                "Docker"
+            ],
+            "cardDescription": [
+                "ColdStorageService è un sistema distribuito per la raccolta di merce scaricata da truck e che deve essere rilasciata su una cella frigorigera. L'operazione di raccolta e di scarico devono essere esegute da un robot.",
+                "Tale progetto è stato realizzato per l'esame di Ingegneria dei sistemi Software M."
+            ],
+            "modelDescription": [
+                "ColdStorageService è un sistema distribuito per la raccolta di merce scaricata da truck e che deve essere rilasciata su una cella frigorifera. L'operazione di raccolta e di scarico devono essere esegute da un robot.",
+                "Tramite un'interfaccia web (realizzata con Spring) l'utente ha la possibilità di inviare una richiesta per scaricare una certa quantità di merce al robot. Se questa viene accettata, viene rilasciato all'utente un ticket di durata limitata che può essere utilizzato per avviare il processo di scarico, in modo tale che il robot possa raccogliere il prodotto scaricarlo e portarlo verso la cella frigorifera. Con una seconda interfaccia (sempre realizzata con Spring) è possibile monitorare lo stato del servizio (la posizione del robot nello spazio, l'operazione che sta eseguendo, ...)",
+                "Il sistema include anche un RaspberryPi a cui è collegato un sonar che permette di simulare la gestione di allarmi imprevisti. In particolare, ogni volta che il sonar rileva un ostacolo ad una distanza, minore di un certo valore limite, il robot deve essere bloccato e potrà riprendere l'operazione che stava facendo solo dopo che l'ostacolo è stato rimosso",
+                "La repo su github è stata divisa in sprint: in ogni sprint è stato sviluppato un particolare servizio dell'applicazione secondo una precedente analisi. In ogni sprint, oltre a tutto il codice, è possibile trovare, dentro la directory userdocs, una descrizione dello sprint, quello che si è sviluppato (e il perché è stato sviluppato in quel determinato modo) ed i passi da seguire per eseguire il codice. ",
+                "Tale progetto è stato realizzato per l'esame di Ingegneria dei sistemi Software M."
+            ],
+            "githubLink": "https://github.com/role-nzo/ISSTemaFinale",
+            "img": "assets/image/ColdStorageImg.png"
+        },
+        {
+            "name": "Fake Server API",
+            "tag": [
+                "Python",
+                "FastAPI",
+                "Docker"
+            ],
+            "cardDescription": [
+                "L'obiettivo del progetto era quello di realizzare un fake API server da affiancare ad una risorsa reale per aumentare il livello di sicurezza.",
+                "Tale progetto è stato realizzato per l'esame di Cybersecurity M."
+            ],
+            "modelDescription": [
+                "L'obiettivo del progetto era quello di realizzare un fake API server da affiancare ad una risorsa reale per aumentare il livello di sicurezza. La nostra proposta è stata quella di realizzare un finto servizio da utilizzare in ambito sanitario.",
+                "Per farlo è stato utilizzato il framework fastAPI che permette di creare api utilizzando Python. Per rendere il servizio il più 'reale' possibile è stato implementato il protocollo OAuth (con estensione PKCE) in modo da aggiungere un livello di protezione nell'accesso alle api.",
+                "Per la creazione delle risposte del server è stato utilizzato un modello LLaMa (sfruttando la libreria Llama.cpp).",
+                "Infine è stata anche implementata una semplice applicazione client (utilizzando il framework Flask) con cui è possibile testare il funzionamento dell'intero sistema.",
+                "Tale progetto è stato realizzato per l'esame di Cybersecurity M."
+            ],
+            "githubLink": "https://github.com/zack-99/restAPIServer",
+            "img": "assets/image/FakeServerImg.png"
+        }
+    ]
+    
+}
