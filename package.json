@@ -19,12 +19,14 @@
     "zone.js": "^0.14.10"
   },
   "scripts": {
-    "build": "ng build --configuration production --output-path=dist/browser --base-href=/lucadominici/"
+    "build": "ng build --configuration production --output-path=dist/browser --base-href=/lucadominici/",
+    "build:prod": "ng build --configuration=production --base-href=/lucadominici/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.5",
-    "@angular/cli": "^18.2.5"
+    "@angular/cli": "^18.2.5",
+    "typescript": "^5.5.4"
   }
 }
