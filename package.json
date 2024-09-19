@@ -19,7 +19,7 @@
     "zone.js": "^0.14.10"
   },
   "scripts": {
-      "build": "ng build",
+      "build": "ng build --configuration production --output-path=dist --base-href='/lucadominici/'",
       "start": "ng serve"
   },
   "author": "",

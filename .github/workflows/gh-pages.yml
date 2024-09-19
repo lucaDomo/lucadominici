@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build --  --configuration production--output-path=dist --base-href="/lucadominici/"
+        run: npx run build --  --configuration production --output-path=dist --base-href="/lucadominici/"
         # Sostituisci <repository-name> con il nome del tuo repository
 
       - name: Deploy to GitHub Pages
