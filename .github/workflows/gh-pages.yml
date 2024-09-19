@@ -6,9 +6,6 @@ on:
     branches:
       - main
 
-  # Esegui il workflow anche manualmente
-  workflow_dispatch:
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -26,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npx run build --  --configuration production --output-path=dist/browser --base-href="/lucadominici/"
+        run: npx run build --  --configuration production --output-path=dist/browser --base-href=/lucadominici/
         # Sostituisci <repository-name> con il nome del tuo repository
 
       - name: Deploy to GitHub Pages
