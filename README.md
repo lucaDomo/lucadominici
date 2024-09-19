@@ -1,3 +1,3 @@
-# Lucadominici
+# Lucadominici - Personal Portfolio
 
 Personal portfolio
