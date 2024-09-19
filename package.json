@@ -19,8 +19,8 @@
     "zone.js": "^0.14.10"
   },
   "scripts": {
-      "build:prod": "ng build --configuration production --base-href https://lucaDomo.github.io/lucadominici/",
-      "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
+      "build:": "ng build --prod",
+      "start": "ng serve"
   },
   "author": "",
   "license": "ISC",
