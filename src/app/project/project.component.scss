@@ -1,11 +1,3 @@
-h2{
-    font-size: 40px;
-    font-weight: 800;
-    color: #ffffff; 
-    letter-spacing: 1.5px;
-    /*color: #ff7a5f;*/
-}
-
 .project_container_content{
 
     width: 90%;
@@ -25,7 +17,6 @@ h2{
 }
 
 .card{
-    
     width: 480px; 
     height: 650px;
     border-radius: 15px;
@@ -46,13 +37,7 @@ h2{
     transform: scale(1.05) !important;
 }
 
-
-.card-model{
-    width: 100% !important;
-    height: max-content !important;
-}
-
-.card_test {
+.card_container {
     flex-basis: calc(50% - 15px);
     margin-top: 15px;
 }
@@ -71,23 +56,6 @@ h2{
     width: 100%;
     height: 200px;
     border-radius: 15px 15px 0 0;
-}
-
-
-.card-bg-model{
-    height: 350px;
-}
-
-.coldstorage{
-    background-image: url("../../assets/image/ColdStorageImg.png");
-}
-
-.fake-api{
-    background-image: url("../../assets/image/moneyTracker.png");
-}
-
-.none{
-    visibility: hidden;
 }
 
 .card_tag_container{
@@ -121,8 +89,7 @@ h2{
     text-align: justify;
     margin: 30px 30px;
     color:aliceblue;
-    min-height: 200px;
-    
+    min-height: 200px;   
 }
 
 .card_button{
@@ -130,12 +97,6 @@ h2{
     justify-content: center;
     display: flex;
     gap: 20px;
-    
-    
-}
-
-.card_button_modal{
-    padding-bottom: 20px;
 }
 
 .btn{
@@ -157,16 +118,18 @@ h2{
 
     .card_description{
         text-align:unset;
-        height: 250px;
-        
+        height: 300px;
     }
 
-    .card_description_modal{
-        height: 100%;
+    .card_button{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
     }
 
     .card{
-        height: 750px;
+        height: 800px;
         width: 100%;
         text-align: left;
     }
@@ -175,89 +138,10 @@ h2{
         padding: 20px;
     }
 
-    .card_test {
+    .card_container {
         border: 1px solid transparent;
         flex-basis: 100vw !important;
         margin: auto;
     }
 
-    .card-model{
-        width: 100% !important;
-        
-    }
-
-    .card-bg-model{
-        
-        height: 200px;
-    }
-
-    .modal{
-        width: 100%;
-        
-        height: fit-content;
-        padding-bottom: 25px;
-    }
-
-    .modal-content{
-        width: 90% !important;
-        
-        margin-top: 10px!important;
-        padding: 0px !important;
-    }
-
 }
-
-/* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 1020px){
-
-}
-
-@media screen and (max-width: 768px){
-    
-    
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    
-    /* background-color: #fefefe;*/
-    margin: auto; /* 15% from the top and centered */
-    padding: 60px;
-    width: 50%; /* Could be more or less, depending on screen size */
-  }
-
-  .close_div{
-    margin-bottom: -45px;
-    display: flex;
-    justify-content: flex-end;
-    width: 95%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    z-index: 10;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-  }

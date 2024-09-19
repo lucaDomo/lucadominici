@@ -1,144 +1,67 @@
-/*  ANIMATION*/
-/*
-.wrapper {
-    position: fixed;
-    top: 50px;
-    width: 90%;
-    height: 650px;
-    background: transparent;
-    display: none;
-    z-index: -100;
-  }
-  
-  .box div {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    border: 5px solid #762efd;
-  }
-  
-  .box div:nth-child(1) {
-    top: 20%;
-    left: 80%;
-    animation: animate 10s linear infinite;
-  }
-  
-  .box div:nth-child(2) {
-    bottom: -10%;
-    left: 65%;
-    animation: animate 7s linear infinite;
-  }
-  .box div:nth-child(3) {
-    top: 66%;
-    left: 26%;
-    animation: animate 9s linear infinite;
-  }
-  
-  @keyframes animate {
-    0% {
-      transform: scale(0.1)  rotate(360deg);
-      opacity: 1;
-    }
-    
-    100% {
-      transform: scale(1.3)  rotate(-180deg);
-      border-radius: 50%;
-      opacity: .3;
-    }
-  }
-*/
-
-
-#up-triangle {
+.test{
   position: absolute;
-  width: 0; 
-  height: 0;
-  right: 500px;
-  top: 120px; 
-  border-bottom: 60px solid blue; 
-  border-left: 30px solid transparent; 
-  border-right: 30px solid transparent; 
+  top: 50px;
+  width: 100%;
+  height: 100vh; 
+  background: transparent;
+  z-index: -100;
+  /*border: 1px solid green;*/
+  overflow-y: visible;
 }
 
-  .test{
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    height: 100vh; 
-    background: transparent;
-    z-index: -100;
-    /*border: 1px solid green;*/
-    overflow-y: visible;
-  }
+.box_test div {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 40px solid #ff7a5f;
+  border-bottom: 25px solid transparent;
+  opacity: .5;
+}
 
-  .pacman {
-    width: 0px;
-    height: 0px;
-    border-right: 25px solid transparent;
-    border-top: 25px solid yellow;
-    border-left: 25px solid yellow;
-    border-bottom: 25px solid yellow;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-  }
+.box_test div:nth-child(1) {
+  top: 80%;
+  left: 80%;
+}
 
-  .box_test div {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 25px solid transparent;
-    border-left: 40px solid #ff7a5f;
-    border-bottom: 25px solid transparent;
-    opacity: .5;
-  }
-  
-  .box_test div:nth-child(1) {
-    top: 80%;
-    left: 80%;
-  }
-  
-  .box_test div:nth-child(2) {
-    bottom: -10%;
-    left: 65%;
-  }
-  .box_test div:nth-child(3) {
-    top: 66%;
-    left: 26%;
-  }
+.box_test div:nth-child(2) {
+  bottom: -10%;
+  left: 65%;
+}
+.box_test div:nth-child(3) {
+  top: 66%;
+  left: 26%;
+}
 
 
-  
 
-  p{
-    padding-top: 15px;
-  }
 
-  #btn_top {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 50px; /* Place the button at the bottom of the page */
-    right: 50px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #e06f58; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
+p{
+  padding-top: 15px;
+}
 
-  #btn_top:hover{
-    background-color: #e9745c;
-  }
+#btn_top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 50px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #e06f58; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
-  @media screen and (max-width: 768px){
-    #btn_top{
-      display: none !important;
-    }
+#btn_top:hover{
+  background-color: #e9745c;
+}
+
+@media screen and (max-width: 768px){
+  #btn_top{
+    display: none !important;
   }
-  
+}

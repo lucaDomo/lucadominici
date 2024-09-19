@@ -1,12 +1,12 @@
 <div class="project_container">
     <div class="title_section_div"> <!-- align-items: flex-end;-->
         <div class="block"></div>
-        <h2>Progetti</h2>
+        <h2 class="projects_h2">Progetti</h2>
     </div>
     <div class="project_container_content">
         <div class="grid">
             
-            <div *ngFor="let project of projects; index as i;" class="card_test">
+            <div *ngFor="let project of projects; index as i;" class="card_container">
                 <div class="card card-animation">
                     <div class="card_head">
                         <div class="card-bg" style="background-image: url('{{project.img}}')"></div>
@@ -21,7 +21,7 @@
                         <p *ngFor="let descr of project.cardDescription">{{descr}}</p>
                     </div>
                     <div class="card_button">
-                        <button class="btn" id="myBtn" (click)="openModal(i)">
+                        <button class="btn" id="myBtn" (click)="seeDetails(i)">
                             <fa-icon [icon]="faCircleInfo" class="fa-xl" style="margin-right: 10px;"></fa-icon>Info
                         </button>
                         <button class="btn" (click)="openCardLink(i)">
@@ -35,41 +35,5 @@
         </div>
         
     </div>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-        <div class="close_div">
-            <span class="close" (click)="closeModal()">&times;</span>
-        </div>
-        <div class="card card-model">
-            <div class="card_head">
-                <div class="card-bg card-bg-model" style="background-image: url('{{modalImg}}')"></div> <!--coldstorage-->
-                <h3 class="card_title">{{modalTitle}}</h3>
-                <div class="card_tag_container">
-                    <div *ngFor="let tag of modalTag" class="tag">
-                        <p>{{tag}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card_description card_description_modal">
-                <p *ngFor="let descr of modalDescription">{{descr}}</p>
-            </div>
-            <div class="card_button card_button_modal">
-                <button class="btn" (click)="openGithubLink({modalLink})">
-                    <fa-icon [icon]="faGithub" class="fa-xl" style="margin-right: 10px;"></fa-icon>Github
-                </button>
-            </div>
-        </div>
-        
-        </div>
-    
-    </div>
-
-    
-
-
 
 </div>

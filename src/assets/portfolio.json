@@ -132,7 +132,7 @@
             "img": "assets/image/ColdStorageImg.png"
         },
         {
-            "name": "Fake Server API",
+            "name": "FakeServerAPI",
             "tag": [
                 "Python",
                 "FastAPI",

@@ -1,1 +1,23 @@
-<p>project-page works!</p>
+<div class="container">
+    <app-navbar></app-navbar>
+    <div class="content">
+        <div class="head">
+            <div class="back_img" style="background-image: url('{{img}}')"></div>
+            <h3 class="title">{{title}}</h3>
+        </div>
+        <div class="tag_container">
+            <div *ngFor="let t of tag" class="tag">
+                <p>{{t}}</p>
+            </div>
+        </div>
+        <div class="description">
+            <p *ngFor="let descr of description">{{descr}}</p>
+        </div>
+        <div class="btn_div">
+            <button class="btn" (click)="openGithub()">
+                <fa-icon [icon]="faGithub" class="fa-xl" style="margin-right: 10px;"></fa-icon>Github
+            </button>
+        </div>
+        
+    </div>
+</div>

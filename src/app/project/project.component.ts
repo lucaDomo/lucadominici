@@ -6,6 +6,7 @@ import { DataloaderService } from '../dataloader.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -18,93 +19,29 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export class ProjectComponent {
 
   projects?:Project[];
-  modal?:HTMLElement;
-  
-  modalTitle:string|undefined = "";
-  modalImg:string|undefined = "";
-  modalTag:string[]|undefined = [];
-  modalDescription:string[]|undefined = [];
-  modalLink:string|undefined = ""
-
   
   faCircleInfo = faCircleInfo;
   faGithub = faGithub;
 
-  constructor(private db: DataloaderService) {}
+  constructor(private db: DataloaderService, private router:Router) {}
   
   ngOnInit() {
     this.projects = this.db.projects;
-
-    this.modal = <HTMLElement> document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = <HTMLElement> document.getElementById("myBtn");
-    // Get the <span> element that closes the modal
-    var span = <HTMLElement> document.getElementsByClassName("close")[0];
-
-    var modalImg = <HTMLInputElement> document.getElementById("img01");
-
-    // When the user clicks on the button, open the modal
-    /*
-    btn.onclick = function() {
-      //modalImg.src = "../../assets/image/image.png";
-      this.modal.style.display = "block";
-
-    }*/
-
-    // When the user clicks on <span> (x), close the modal
-    //span.addEventListener("click", this.closeModal);
-
-    // When the user clicks anywhere outside of the modal, close it
-   /* 
-    window.onclick = function(event) {
-      if (event.target == this.modal) {
-        this.modal.style.display = "none";
-      }
-    }*/
-    
-    
-    window.onclick = (event) => {
-      this.windowCloseModal(event)
-    }
-
-
-    
   }
 
-  windowCloseModal(event:any){
-    if (this.modal!=null){
-      if (event.target == this.modal) {
-        this.modal.style.display = "none";
-      }
-    }
-  }
 
-  closeModal(){
-    if (this.modal!=null){
-      this.modal.style.display = "none";
-    }
-      
-  }
 
-  openModal(index:number){
-    if (this.modal!=null && this.projects!=null){
-      var project_ = this.projects[index];
-      this.modalImg = project_.img;
-      this.modalTag = project_.tag;
-      this.modalDescription = project_.modelDescription;
-      this.modalTitle = project_.name;
-      this.modalLink = project_.githubLink;
-
-      this.modal.style.display = "block";
+  seeDetails(index:number){
+    if (this.projects!=null){
+      var projectName = this.projects[index].name?.toLowerCase()
+      this.router.navigate(["/project", projectName])
     }
   }
 
   openCardLink(index:number){
     if (this.projects!=null){
       var project_ = this.projects[index];
-      this.modalLink = project_.githubLink;
-      this.openGithubLink(this.modalLink);
+      this.openGithubLink(project_.githubLink);
     }
   }
 
