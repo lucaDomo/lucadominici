@@ -21,6 +21,10 @@
             "name": "Java"
         },
         {
+            "iconClass": "devicon-quarkus-plain",
+            "name": "Quarkus"
+        },
+        {
             "iconClass": "devicon-spring-original",
             "name": "Spring"
         },
@@ -60,6 +64,11 @@
     ],
     "works":[
         {
+            "title": "Consulente IT presso Technology Reply",
+            "period": "Bologna (BO), Novembre 2024 - In corso",
+            "description": "Programmazione back-end con Java e il framework Quarkus, sviluppo di microservizi e applicazioni lato server"
+        },
+        {
             "title": "Web Developer presso Ciollo Service s.r.l",
             "period": "Bologna (BO), Settembre 2022 - Marzo 2023",
             "description": "Programmazione Web con PHP, utilizzo del framework Angular e Laravel"
@@ -73,25 +82,46 @@
     "istruzione":[
         {
             "title": "Laurea Magistrale in Ingegneria Informatica",
-            "period": "Ottobre 2022 - In corso",
-            "description": "Alma Mater Studiorum University, Bologna (BO)"
+            "period": "Ottobre 2022 - Marzo 2025",
+            "description": "Alma Mater Studiorum University, Bologna (BO)",
+            "thesis": "FedUNRAN: On-device Federated Unlearning via Random Labels",
+            "thesis_link":"https://ieeexplore.ieee.org/abstract/document/10825563"
         },
         {
             "title": "Laurea Triennale in Ingegneria Informatica",
             "period": "Settembre 2019 - Ottobre 2022",
-            "description": "Alma Mater Studiorum University, Bologna (BO)"
+            "description": "Alma Mater Studiorum University, Bologna (BO)",
+            "thesis": "",
+            "thesis_link":""
         }
     ],
     "about":{
         "title": "Ciao, sono Luca",
         "subtitle": "Software Developer, Full Stack Developer",
         "content":[
-            "Laureato alla triennale di Ingegneria informatica all'università di Bologna. Sto frequententando al momento l'ultimo anno della magistrale di Ingegneria informatica sempre all'università di Bologna.",
-            
-            "Ho svolto un periodo di attività lavorativa post tirocinio triennale come Full Stack Developer lavorando principalmente con PHP e il framework Angular."
+            "Ho conseguito la laurea magistrale in Ingegneria informatica presso l’Università di Bologna. Attualmente lavoro come sviluppatore back-end presso Technology Reply, dove utilizzo principalmente Java e il framework Quarkus per lo sviluppo di microservizi e applicazioni lato server.",
+
+            "Durante il mio percorso accademico magistrale ho svolto un lavoro di tesi in ambito machine learning, con particolare focus su federated learning e federated unlearning, che è stato presentato durante la conferenza IEEE 2024."
         ]
     },
     "projects":[
+        {
+            "name": "FedUNRAN: On-device Federated Unlearning via Random Labels",
+            "tag": [
+                "Python"
+            ],
+            "cardDescription": [
+                "Metodo di federated unlearning progettato per rimuovere il contributo di un singolo client da un modello di federated learning senza richiedere il riaddestramento completo del modello globale."
+            ],
+            "modelDescription": [
+                "Metodo di federated unlearning progettato per rimuovere il contributo di un singolo client da un modello di federated learning senza richiedere il riaddestramento completo del modello globale.",
+                "L’approccio si basa sull’utilizzo di random labels per annullare localmente l’informazione appresa dai dati del client, mantenendo l’architettura privacy-preserving tipica del federated learning.",
+                "Il metodo è stato valutato tramite test su diversi dataset, mostrando una buona capacità di rimozione della conoscenza del client con costi computazionali ridotti rispetto alle tecniche basate su retraining completo."
+            ],
+            "githubLink": "https://github.com/alessiomora/FedUNRAN",
+            "img": "assets/image/fl.png",
+            "infoName": "fedunran"
+        },
         {
             "name": "MoneyTracker",
             "tag": [
@@ -99,15 +129,14 @@
                 "Laravel"
             ],
             "cardDescription": [
-                "Applicazione web per monitorare le proprie spese ed i propri guadagni. Si ha la possibilità di filtrare le transazioni per periodo (settimana, mese, anno), di suddividere le transazioni per categorie e avere un resoconto generale tramite dei grafici.",
-                "È in sviluppo la possibilità di esportare tutte le informazioni in un file csv."
+                "Applicazione web per monitorare le proprie spese ed i propri guadagni. Si ha la possibilità di filtrare le transazioni per periodo (settimana, mese, anno), di suddividere le transazioni per categorie e avere un resoconto generale tramite dei grafici."
             ],
             "modelDescription": [
-                "Applicazione web per monitorare le proprie spese ed i propri guadagni. Si ha la possibilità di filtrare le transazioni per periodo (settimana, mese, anno), di suddividere le transazioni per categorie e avere un resoconto generale tramite dei grafici.",
-                "È in sviluppo la possibilità di esportare tutte le informazioni in un file csv."
+                "Applicazione web per monitorare le proprie spese ed i propri guadagni. Si ha la possibilità di filtrare le transazioni per periodo (settimana, mese, anno), di suddividere le transazioni per categorie e avere un resoconto generale tramite dei grafici."
             ],
             "githubLink": "https://github.com/lucaDomo/moneyTracker",
-            "img": "assets/image/moneyTracker.png" 
+            "img": "assets/image/moneyTracker.png",
+            "infoName": "moneytracker"
         },
         {
             "name": "ColdStorageService",
@@ -129,7 +158,8 @@
                 "Tale progetto è stato realizzato per l'esame di Ingegneria dei sistemi Software M."
             ],
             "githubLink": "https://github.com/role-nzo/ISSTemaFinale",
-            "img": "assets/image/ColdStorageImg.png"
+            "img": "assets/image/ColdStorageImg.png",
+            "infoName": "coldstorageservice"
         },
         {
             "name": "FakeServerAPI",
@@ -150,7 +180,8 @@
                 "Tale progetto è stato realizzato per l'esame di Cybersecurity M."
             ],
             "githubLink": "https://github.com/zack-99/restAPIServer",
-            "img": "assets/image/FakeServerImg.png"
+            "img": "assets/image/FakeServerImg.png",
+            "infoName": "fakeserverapi"
         }
     ]
     
