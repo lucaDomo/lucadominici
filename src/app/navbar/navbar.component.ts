@@ -1,15 +1,9 @@
 import { Component } from '@angular/core';
-import { AboutComponent } from '../about/about.component';
-import { ContactComponent } from '../contact/contact.component';
-import { FormazioneComponent } from '../formazione/formazione.component';
-import { SkillComponent } from '../skill/skill.component';
-import { WorkExperienceComponent } from '../work-experience/work-experience.component';
-import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [AboutComponent, FormazioneComponent, SkillComponent, WorkExperienceComponent, ContactComponent, ProjectComponent],
+  imports: [],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
