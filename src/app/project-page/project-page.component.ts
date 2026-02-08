@@ -36,7 +36,7 @@ export class ProjectPageComponent {
       var projectName = params.get('projectname');
       this.projects = this.db.projects;
       this.projects.forEach(project => {
-        if (project.name?.toLowerCase()==projectName){
+        if (project.infoName?.toLowerCase()==projectName){
           this.title = project.name
           this.tag = project.tag
           this.description = project.modelDescription

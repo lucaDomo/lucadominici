@@ -33,7 +33,7 @@ export class ProjectComponent {
 
   seeDetails(index:number){
     if (this.projects!=null){
-      var projectName = this.projects[index].name?.toLowerCase()
+      var projectName = this.projects[index].infoName?.toLowerCase()
       this.router.navigate(["/project", projectName])
     }
   }

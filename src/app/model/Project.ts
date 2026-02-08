@@ -6,4 +6,5 @@ export class Project{
     modelDescription?:string[];
     githubLink?:string;
     img?:string;
+    infoName?:string;
 }

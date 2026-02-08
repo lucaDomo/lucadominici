@@ -14,17 +14,13 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
-    color: aliceblue;
+    color: #e06f58;
+    opacity: .8;
 }
 
 .menu a:hover{
     color: #e06f58;
-}
-
-.content{
-    /*margin: 0px 100px 0px 100px;*/
-    
-    /*text-align: center;*/
+    opacity: 1;
 }
 
 .x_btn{
@@ -52,7 +48,7 @@
         padding: 30px 0 0px 0;
         position: fixed;
         z-index: 100;
-        background-color: #18191f;
+        background-color: #111827;
         top: 0;
         left: 0;
         height:fit-content;
