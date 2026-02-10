@@ -9,11 +9,10 @@ import { ContactComponent } from '../contact/contact.component';
 
 @Component({
     selector: 'app-homepage',
-    standalone: true,
     templateUrl: './homepage.component.html',
     styleUrl: './homepage.component.scss',
     imports: [NavbarComponent, AboutComponent, FormazioneComponent, SkillComponent, WorkExperienceComponent,
-    ProjectComponent, ContactComponent]
+        ProjectComponent, ContactComponent]
 })
 export class HomepageComponent {
 }

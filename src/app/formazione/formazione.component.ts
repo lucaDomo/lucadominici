@@ -7,11 +7,10 @@ import {
 import { DataloaderService } from '../dataloader.service';
 
 @Component({
-  selector: 'app-formazione',
-  standalone: true,
-  imports: [NgFor, NgIf],
-  templateUrl: './formazione.component.html',
-  styleUrl: './formazione.component.scss'
+    selector: 'app-formazione',
+    imports: [NgFor, NgIf],
+    templateUrl: './formazione.component.html',
+    styleUrl: './formazione.component.scss'
 })
 export class FormazioneComponent {
 

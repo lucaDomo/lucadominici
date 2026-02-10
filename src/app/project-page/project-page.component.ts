@@ -10,11 +10,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
-  selector: 'app-project-page',
-  standalone: true,
-  imports: [FontAwesomeModule, NgFor, NavbarComponent],
-  templateUrl: './project-page.component.html',
-  styleUrl: './project-page.component.scss'
+    selector: 'app-project-page',
+    imports: [FontAwesomeModule, NgFor, NavbarComponent],
+    templateUrl: './project-page.component.html',
+    styleUrl: './project-page.component.scss'
 })
 export class ProjectPageComponent {
 
