@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {NgFor} from '@angular/common';
 import { Project } from '../model/Project';
 import { DataloaderService } from '../dataloader.service';
 
@@ -11,7 +10,8 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-project',
-    imports: [FontAwesomeModule, NgFor],
+    standalone: true,
+    imports: [FontAwesomeModule],
     templateUrl: './project.component.html',
     styleUrl: './project.component.scss'
 })

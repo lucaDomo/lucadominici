@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { DataloaderService } from '../dataloader.service';
 import { About } from '../model/About';
-import { NgFor } from '@angular/common';
 
 @Component({
     selector: 'app-about',
-    imports: [NgFor],
+    imports: [],
     templateUrl: './about.component.html',
     styleUrl: './about.component.scss'
 })

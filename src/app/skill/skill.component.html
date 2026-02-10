@@ -6,12 +6,14 @@
 
     <div class="skill_container_icons">
 
-        <div *ngFor="let skill of skills" class="skill_container_box">
-            <div class="skill_container_icon">
-                <i class="{{skill?.iconClass}} icon"></i>
-                <h5>{{skill?.name}}</h5>
+        @for (skill of skills; track $index) {
+            <div class="skill_container_box">
+                <div class="skill_container_icon">
+                    <i class="{{skill?.iconClass}} icon"></i>
+                    <h5>{{skill?.name}}</h5>
+                </div>
             </div>
-        </div>
+        }
         
     </div>
 

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {NgFor} from '@angular/common';
 
 import { DataloaderService } from './../dataloader.service';
 import { Skill } from '../model/Skill';
 
 @Component({
     selector: 'app-skill',
-    imports: [NgFor],
+    standalone: true,
+    imports: [],
     templateUrl: './skill.component.html',
     styleUrl: './skill.component.scss'
 })

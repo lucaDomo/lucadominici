@@ -5,9 +5,11 @@
             <h6>{{about?.subtitle}}</h6>
         </div>
         <div class="about_container_text_info">
-            <p *ngFor="let content of about?.content" style="padding: 5px;">
-                {{content}}
-            </p>
+            @for (content of about?.content; track $index) {
+                <p style="padding: 5px;">
+                    {{content}}
+                </p>
+            }
         </div>
     </div>
     <div class="about_container_img">

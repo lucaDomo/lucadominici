@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {NgFor} from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
 import { Project } from '../model/Project';
@@ -11,7 +10,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
     selector: 'app-project-page',
-    imports: [FontAwesomeModule, NgFor, NavbarComponent],
+    imports: [FontAwesomeModule, NavbarComponent],
     templateUrl: './project-page.component.html',
     styleUrl: './project-page.component.scss'
 })

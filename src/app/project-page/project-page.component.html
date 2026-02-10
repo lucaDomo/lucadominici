@@ -6,12 +6,16 @@
             <h3 class="title">{{title}}</h3>
         </div>
         <div class="tag_container">
-            <div *ngFor="let t of tag" class="tag">
-                <p>{{t}}</p>
-            </div>
+            @for (t of tag; track $index) {
+                <div class="tag">
+                    <p>{{t}}</p>
+                </div>
+            }
         </div>
         <div class="description">
-            <p *ngFor="let descr of description">{{descr}}</p>
+            @for (descr of description; track $index) {
+                <p>{{descr}}</p>
+            }
         </div>
         <div class="btn_div">
             <button class="btn" (click)="openGithub()">

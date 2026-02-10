@@ -6,31 +6,38 @@
     <div class="project_container_content">
         <div class="grid">
             
-            <div *ngFor="let project of projects; index as i;" class="card_container">
-                <div class="card card-animation">
-                    <div class="card_head">
-                        <div class="card-bg" style="background-image: url('{{project.img}}')"></div>
-                        <h3 class="card_title">{{project.name}}</h3>
-                        <div class="card_tag_container">
-                            <div *ngFor="let tag of project.tag" class="tag">
-                                <p>{{tag}}</p>
+            @for (project of projects; track $index) {
+                <div class="card_container">
+                    <div class="card card-animation">
+                        <div class="card_head">
+                            <div class="card-bg" style="background-image: url('{{project.img}}')"></div>
+                            <h3 class="card_title">{{project.name}}</h3>
+                            <div class="card_tag_container">
+                                @for (tag of project.tag; track $index) {
+                                     <div class="tag">
+                                        <p>{{tag}}</p>
+                                    </div>
+                                }
                             </div>
                         </div>
-                    </div>
-                    <div class="card_description">
-                        <p *ngFor="let descr of project.cardDescription">{{descr}}</p>
-                    </div>
-                    <div class="card_button">
-                        <button class="btn" id="myBtn" (click)="seeDetails(i)">
-                            <fa-icon [icon]="faCircleInfo" class="fa-xl" style="margin-right: 10px;"></fa-icon>Info
-                        </button>
-                        <button class="btn" (click)="openCardLink(i)">
-                            <fa-icon [icon]="faGithub" class="fa-xl" style="margin-right: 10px;"></fa-icon>Github
-                        </button>
-                        
+                        <div class="card_description">
+                            @for (descr of project.cardDescription; track $index) {
+                                <p>{{descr}}</p>
+                            }
+                        </div>
+                        <div class="card_button">
+                            <button class="btn" id="myBtn" (click)="seeDetails($index)">
+                                <fa-icon [icon]="faCircleInfo" class="fa-xl" style="margin-right: 10px;"></fa-icon>Info
+                            </button>
+                            <button class="btn" (click)="openCardLink($index)">
+                                <fa-icon [icon]="faGithub" class="fa-xl" style="margin-right: 10px;"></fa-icon>Github
+                            </button>
+                            
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
+            
            
         </div>
         

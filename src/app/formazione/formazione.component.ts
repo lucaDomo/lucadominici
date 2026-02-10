@@ -1,14 +1,10 @@
 import { Istruzione } from './../model/Istruzione';
 import { Component } from '@angular/core';
-import {
-  NgFor,
-  NgIf
-} from '@angular/common';
 import { DataloaderService } from '../dataloader.service';
 
 @Component({
     selector: 'app-formazione',
-    imports: [NgFor, NgIf],
+    imports: [],
     templateUrl: './formazione.component.html',
     styleUrl: './formazione.component.scss'
 })
