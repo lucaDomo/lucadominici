@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DataloaderService } from '../dataloader.service';
 import { About } from '../model/About';
 
@@ -6,6 +6,7 @@ import { About } from '../model/About';
     selector: 'app-about',
     imports: [],
     templateUrl: './about.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './about.component.scss'
 })
 export class AboutComponent {

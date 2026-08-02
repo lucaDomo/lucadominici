@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Project } from '../model/Project';
 import { DataloaderService } from '../dataloader.service';
 
@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
     standalone: true,
     imports: [FontAwesomeModule],
     templateUrl: './project.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './project.component.scss'
 })
 export class ProjectComponent {

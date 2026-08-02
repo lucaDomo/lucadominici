@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Project } from '../model/Project';
@@ -12,6 +12,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
     selector: 'app-project-page',
     imports: [FontAwesomeModule, NavbarComponent],
     templateUrl: './project-page.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './project-page.component.scss'
 })
 export class ProjectPageComponent {

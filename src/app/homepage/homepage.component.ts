@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NavbarComponent } from "../navbar/navbar.component";
 import { AboutComponent } from '../about/about.component';
 import { FormazioneComponent } from '../formazione/formazione.component';
@@ -11,6 +11,7 @@ import { ContactComponent } from '../contact/contact.component';
     selector: 'app-homepage',
     templateUrl: './homepage.component.html',
     styleUrl: './homepage.component.scss',
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [NavbarComponent, AboutComponent, FormazioneComponent, SkillComponent, WorkExperienceComponent,
         ProjectComponent, ContactComponent]
 })

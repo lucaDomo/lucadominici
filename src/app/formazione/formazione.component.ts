@@ -1,11 +1,12 @@
 import { Istruzione } from './../model/Istruzione';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DataloaderService } from '../dataloader.service';
 
 @Component({
     selector: 'app-formazione',
     imports: [],
     templateUrl: './formazione.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './formazione.component.scss'
 })
 export class FormazioneComponent {

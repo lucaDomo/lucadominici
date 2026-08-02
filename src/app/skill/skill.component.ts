@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { DataloaderService } from './../dataloader.service';
 import { Skill } from '../model/Skill';
@@ -8,6 +8,7 @@ import { Skill } from '../model/Skill';
     standalone: true,
     imports: [],
     templateUrl: './skill.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './skill.component.scss'
 })
 export class SkillComponent {
