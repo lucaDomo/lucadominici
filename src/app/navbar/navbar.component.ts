@@ -10,11 +10,11 @@ export class NavbarComponent {
 
 
   close(){
+    var x_btn = document.getElementById("x_btn")
     var el = document.getElementById("navbar")
-    if(el!=null){
+    if(el!=null && x_btn!=null && x_btn.style.display == "block"){
       el.style.display = "none"
-      el = <HTMLDivElement>document.getElementById("x_btn")
-      el.style.display = "none"
+      x_btn.style.display = "none"
       el = <HTMLDivElement>document.getElementById("hamburger")
       el.style.display = "block"
     }

@@ -1,8 +1,6 @@
 .project_container_content{
-
     width: 90%;
     margin: 50px auto 0px auto;
-
 }
 
 .grid{
@@ -109,6 +107,13 @@
     cursor: pointer;
 }
 
+/* Disable hover styles for touch devices */
+@media (hover: none) {
+    .card-animation:hover {
+        transform: none;
+    }
+}
+
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 640px){
 
@@ -118,7 +123,8 @@
 
     .card_description{
         text-align:unset;
-        height: 300px;
+        /*height: 300px;*/
+        height: fit-content !important;
     }
 
     .card_button{
@@ -126,6 +132,7 @@
         justify-content: center;
         display: flex;
         gap: 20px;
+        margin-top: 10%;
     }
 
     .card{
@@ -142,6 +149,16 @@
         border: 1px solid transparent;
         flex-basis: 100vw !important;
         margin: auto;
+        width: inherit;
+    }
+
+    .card_title{
+        height: fit-content;
+        padding: 15px !important;
+    }
+
+    .project_container_content {
+        width: 100% !important;
     }
 
 }
